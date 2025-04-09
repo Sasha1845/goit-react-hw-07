@@ -2,11 +2,8 @@
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts } from "./components/redux/contactsOps.js";
-import {
-  selectError,
-  selectLoading,
-} from "./components/redux/contactsSlice.js";
+import { fetchContacts } from "./redux/contactsOps.js";
+import { selectError, selectLoading } from "./redux/contactsSlice.js";
 import ContactForm from "./components/ContactForm/ContactForm.jsx";
 import ContactList from "./components/ContactList/ContactList.jsx";
 import SearchBox from "./components/SearchBox/SearchBox.jsx";
